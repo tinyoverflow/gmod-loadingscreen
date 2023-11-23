@@ -1,0 +1,2 @@
+[*.php]
+ij_php_force_empty_methods_in_one_line = true

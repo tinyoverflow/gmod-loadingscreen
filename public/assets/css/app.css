@@ -1,0 +1,51 @@
+@import "variables.css";
+
+@import "background.css";
+@import "header.css";
+@import "greeting.css";
+@import "console.css";
+@import "progress.css";
+@import "decorations.css";
+
+body {
+    box-sizing: border-box;
+
+    height: 100vh;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Inter Tight', sans-serif;
+
+    background: #141618 url("../img/noise.png");
+    background-blend-mode: multiply;
+
+    color: var(--color-text);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+
+    width: 800px;
+    height: 80vh;
+
+    gap: 2rem;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+
+    max-height: 100%;
+
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.group--reverse {
+    flex-direction: column-reverse;
+}

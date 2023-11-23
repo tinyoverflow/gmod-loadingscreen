@@ -1,0 +1,22 @@
+:root {
+    --color-text: #a5a5a5;
+    --color-text-muted: #999999;
+
+    --color-white: #d1d1d1;
+    --color-green: #82bf86;
+    --color-blue: #82a7bf;
+    --color-cyan: #82babc;
+    --color-violet: #9a82bc;
+    --color-purple: #828ebc;
+    --color-yellow: #bcbc82;
+    --color-brown: #bca582;
+    --color-red: #bc8283;
+
+    --color-background: #1f2126;
+    --color-background-highlight: rgba(128, 128, 128, 15%);
+
+    --color-primary: var(--color-brown);
+
+    --background: var(--color-background);
+    --border-radius: 6px;
+}

@@ -1,0 +1,86 @@
+.console {
+    background: var(--background);
+
+    color: #999999;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    min-height: min-content;
+}
+
+.group--reverse .console {
+    flex-direction: column-reverse;
+    justify-content: start;
+}
+
+/*
+ * Console Line
+ */
+.console-line {
+    padding: 4px 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.console-line:nth-child(even) {
+    background-color: var(--color-background-highlight);
+}
+
+.console-line__content {
+    display: flex;
+}
+
+.console-line__timestamp {
+    width: 10ch;
+    font-variant-numeric: tabular-nums;
+}
+
+.console-line__meta {
+    font-variant-numeric: tabular-nums;
+}
+
+.console-line__message {
+    display: flex;
+    justify-content: space-between;
+    line-height: normal;
+}
+
+.console-line__message {
+    color: var(--color-green);
+}
+
+.console-line__message--status {
+    color: var(--color-blue);
+}
+
+.console-line__message--white {
+    color: var(--color-white);
+}
+
+.console-line__message--image,
+.console-line__message--texture {
+    color: var(--color-cyan);
+}
+
+.console-line__message--particles {
+    color: var(--color-violet);
+}
+
+.console-line__message--models {
+    color: var(--color-purple);
+}
+
+.console-line__message--map {
+    color: var(--color-red);
+}
+
+.console-line__message--sounds {
+    color: var(--color-yellow);
+}
+
+.console-line__message--fonts {
+    color: var(--color-brown);
+}
