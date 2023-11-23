@@ -85,6 +85,6 @@ $renderer->render('app.php', [
     'backgroundFiles' => $backgroundFiles,
     'musicFile' => $musicFile,
 
-    'playerName' => $player->name,
-    'playerAvatarUrl' => $player->avatarUrl
+    'playerName' => $player?->name,
+    'playerAvatarUrl' => $player?->avatarUrl
 ]);
