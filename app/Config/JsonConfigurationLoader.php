@@ -1,8 +1,8 @@
 <?php
 
-namespace App;
+namespace App\Config;
 
-class ConfigurationLoader
+class JsonConfigurationLoader implements ConfigurationLoader
 {
     public function __construct(
         private readonly string $path

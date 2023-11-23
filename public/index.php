@@ -1,11 +1,11 @@
 <?php
 
-use App\ConfigurationLoader;
+use App\Config\JsonConfigurationLoader;
 use App\Steam;
 
 require __DIR__ . '/../vendor/autoload.php';
 
-$configuration = (new ConfigurationLoader(__DIR__ . '/../config/config.json'))->load();
+$configuration = (new JsonConfigurationLoader(__DIR__ . '/../config/config.json'))->load();
 $steam = new Steam($configuration->steamApiKey);
 
 $player = $steam->getPlayer($_GET['steamid']);
