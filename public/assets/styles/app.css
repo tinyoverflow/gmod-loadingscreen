@@ -20,7 +20,7 @@ body {
 
     font-family: 'Inter Tight', sans-serif;
 
-    background: #141618 url("../img/noise.png");
+    background: #141618 url("../images/noise.png");
     background-blend-mode: multiply;
 
     color: var(--color-text);
