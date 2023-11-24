@@ -6,14 +6,9 @@
 
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: start;
 
     min-height: min-content;
-}
-
-.group--reverse .console {
-    flex-direction: column-reverse;
-    justify-content: start;
 }
 
 /*

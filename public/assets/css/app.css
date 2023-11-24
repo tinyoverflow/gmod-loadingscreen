@@ -37,15 +37,11 @@ body {
 }
 
 .group {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: min-content auto;
 
     max-height: 100%;
 
     border-radius: var(--border-radius);
     overflow: hidden;
-}
-
-.group--reverse {
-    flex-direction: column-reverse;
 }

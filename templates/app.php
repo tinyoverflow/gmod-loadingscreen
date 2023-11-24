@@ -15,10 +15,10 @@
     </head>
 
     <body>
-        <div class="background" style="--backgrounds: <?= $backgrounds = 6 ?>">
-            <?php for ($i = 1; $i <= $backgrounds; $i++): ?>
-                <img src="assets/img/backgrounds/<?= $i ?>.jpg" class="background__item" style="--index: <?= $i - 1 ?>" />
-            <?php endfor; ?>
+        <div class="background">
+            <?php foreach ($backgroundFiles as $background): ?>
+                <img src="assets/img/backgrounds/<?= $background ?>" class="background__item" />
+            <?php endforeach; ?>
         </div>
 
         <?php if ($musicFile !== null): ?>
@@ -56,23 +56,23 @@
             </div>
 
             <div class="group group--reverse">
-                <!-- Empty Console Element -->
-                <div class="console" id="console"></div>
-
                 <!-- Download Progress Element -->
                 <div class="progress">
                     <div class="progress__header">
-                        <div class="progress__title" id="progressTitle">&nbsp;</div>
+                    <div class="progress__title" id="progressTitle">&nbsp;</div>
                         <div class="progress__meta" id="progressMeta">&nbsp;</div>
                     </div>
 
                     <div class="progress__bar">
-                        <div class="progress__bar-filler" id="progressBar"></div>
+                    <div class="progress__bar-filler" id="progressBar"></div>
                     </div>
                 </div>
+
+                <!-- Empty Console Element -->
+                <div class="console" id="console"></div>
             </div>
         </div>
 
-        <script src="assets/js/app.js"></script>
+        <script type="module" src="assets/js/app.js"></script>
     </body>
 </html>
