@@ -4,24 +4,9 @@
  */
 export default class Background {
     constructor() {
-        window.addEventListener('DOMContentLoaded', this.initializeBackgroundFader);
-    }
-
-    /**
-     * Attaches an event listener for the animationend event to the given element.
-     *
-     * @param {Element} element
-     */
-    registerBackgroundEvents(element) {
-        element.addEventListener('animationend', this.handleBackgroundAnimationendEvent);
-    }
-
-    /**
-     * Handles all necessary steps to get the animated background going.
-     */
-    initializeBackgroundFader() {
-        document.querySelectorAll('.background__item')
-            .forEach(element => this.registerBackgroundEvents(element));
+        document.querySelectorAll('.background__item').forEach(element => {
+            element.addEventListener('animationend', this.handleBackgroundAnimationendEvent);
+        });
     }
 
     /**
