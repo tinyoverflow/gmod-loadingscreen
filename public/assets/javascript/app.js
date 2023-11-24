@@ -47,7 +47,7 @@ if (enableDevelopmentMode) {
     SetFilesTotal(30);
     SetFilesNeeded(30);
 
-    GameDetails("[DE] tinyoverflow | Trouble in Terrorist Town", "tinyoverflow.me", "ttt_minecraft_b5", 20, "", "terrortown");
+    GameDetails("[DE] tinyoverflow | Trouble in Terrorist Town", "tinyoverflow.me", "ttt_minecraft_b5", 20, "", "terrortown", 0.75, 'de');
 
     const demoData = [
         () => DownloadingFile("Downloading materials/mycommunity/image.jpeg"),

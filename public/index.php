@@ -63,7 +63,7 @@ $player = $_GET['steamid']
 $backgroundFiles = FileCrawler::in(__DIR__ . '/assets/images/backgrounds')->inRandomOrder()->list();
 
 $musicFile = $configuration->musicEnabled
-    ? FileCrawler::in(__DIR__ . '/music')->inRandomOrder()->first()
+    ? FileCrawler::in(__DIR__ . '/assets/music')->inRandomOrder()->first()
     : null;
 
 /*

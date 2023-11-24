@@ -145,7 +145,10 @@ export default class LoadingScreen {
         this.gameModeName.innerText = this.gameModeMap.get(gameMode);
         this.mapName.innerText = mapName;
 
-        this.musicPlayer.volume = volume;
+        if (this.musicPlayer) {
+            this.musicPlayer.volume = volume;
+            this.musicPlayer.play().then(r => console.log('Music playback started.'));
+        }
     }
 
     /**
