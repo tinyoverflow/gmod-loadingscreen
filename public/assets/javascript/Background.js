@@ -4,9 +4,20 @@
  */
 export default class Background {
     constructor() {
-        document.querySelectorAll('.background__item').forEach(element => {
-            element.addEventListener('animationend', this.handleBackgroundAnimationendEvent);
-        });
+        document.querySelectorAll('.background__item').forEach(
+            this.registerBackgroundEvents.bind(this)
+        );
+    }
+
+    /**
+     * Attaches an event listener for the animationend event to the given element.
+     *
+     * @param {Element} element
+     */
+    registerBackgroundEvents(element) {
+        element.addEventListener('animationend',
+            this.handleBackgroundAnimationendEvent.bind(this)
+        );
     }
 
     /**
