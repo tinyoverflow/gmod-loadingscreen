@@ -27,6 +27,9 @@ export default class LoadingScreen {
 
         this.console = document.getElementById('console');
 
+        /** @type HTMLAudioElement */
+        this.musicPlayer = document.getElementById('musicPlayer');
+
         this.files = {
             total: 0,
             needed: 0,
@@ -141,6 +144,8 @@ export default class LoadingScreen {
         this.serverName.innerText = serverName;
         this.gameModeName.innerText = this.gameModeMap.get(gameMode);
         this.mapName.innerText = mapName;
+
+        this.musicPlayer.volume = volume;
     }
 
     /**

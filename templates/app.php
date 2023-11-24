@@ -26,7 +26,7 @@
         <?php endif; ?>
 
         <?php if (($musicFile ?? null) !== null): ?>
-            <audio autoplay loop muted>
+            <audio autoplay loop muted id="musicPlayer">
                 <source src="<?= $musicFile ?? '' ?>" type="audio/mpeg">
                 Dein Browser unterstützt leider keine Audiowiedergabe.
             </audio>
